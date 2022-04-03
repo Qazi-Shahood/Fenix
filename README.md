@@ -4,3 +4,4 @@ Demo application for Fenix that displays movies from themoviedb.org by a search 
 ## Features
 - Clean Architecture with MVVM
 - No external library
+- Zero warnings
