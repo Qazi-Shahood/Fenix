@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="FenixAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Bp-jT-9xb">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="165"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZ8-Xm-4rG">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="165"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientImage" translatesAutoresizingMaskIntoConstraints="NO" id="apt-rl-rY9">
+                        <rect key="frame" x="0.0" y="99" width="319" height="66"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-9Z-2NG">
+                        <rect key="frame" x="20" y="124" width="48" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="apt-rl-rY9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Y2-3q-ECP"/>
+                <constraint firstAttribute="bottom" secondItem="zZ8-Xm-4rG" secondAttribute="bottom" id="6bR-Rh-zhW"/>
+                <constraint firstAttribute="trailing" secondItem="apt-rl-rY9" secondAttribute="trailing" id="Ccr-oM-cVE"/>
+                <constraint firstAttribute="bottom" secondItem="Jnt-9Z-2NG" secondAttribute="bottom" constant="20" id="Jbx-FD-ffh"/>
+                <constraint firstItem="Jnt-9Z-2NG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="JnI-Sz-gdS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jnt-9Z-2NG" secondAttribute="trailing" constant="20" id="Lsp-2l-slF"/>
+                <constraint firstAttribute="bottom" secondItem="apt-rl-rY9" secondAttribute="bottom" id="M6O-Je-pqr"/>
+                <constraint firstItem="zZ8-Xm-4rG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MqT-q9-2hh"/>
+                <constraint firstAttribute="trailing" secondItem="4Bp-jT-9xb" secondAttribute="trailing" id="Z78-RO-sSJ"/>
+                <constraint firstItem="4Bp-jT-9xb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aMg-be-3vy"/>
+                <constraint firstItem="apt-rl-rY9" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.4" id="cs9-C2-x2u"/>
+                <constraint firstItem="4Bp-jT-9xb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fEn-QH-Goo"/>
+                <constraint firstAttribute="bottom" secondItem="4Bp-jT-9xb" secondAttribute="bottom" id="hLj-1U-cxp"/>
+                <constraint firstAttribute="trailing" secondItem="zZ8-Xm-4rG" secondAttribute="trailing" id="l3X-HZ-1nE"/>
+                <constraint firstItem="zZ8-Xm-4rG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p3h-nm-HlX"/>
+            </constraints>
+            <size key="customSize" width="319" height="165"/>
+            <connections>
+                <outlet property="gradientImageView" destination="apt-rl-rY9" id="zjS-fV-U4U"/>
+                <outlet property="imageView" destination="4Bp-jT-9xb" id="tiN-Xd-5Vg"/>
+                <outlet property="nameLabel" destination="Jnt-9Z-2NG" id="jhU-6H-bVX"/>
+                <outlet property="shadeView" destination="zZ8-Xm-4rG" id="W39-8e-jhE"/>
+            </connections>
+            <point key="canvasLocation" x="332.60869565217394" y="138.28125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gradientImage" width="1005" height="210"/>
+    </resources>
+</document>
